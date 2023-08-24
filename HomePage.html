@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios - INTRO</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&amp;family=Open+Sans:wght@400&amp;display=swap"
+        rel="stylesheet" data-optimized-fonts="true">
+</head>
+<body>
+<header id="website-header" class="transition-colors shadow"
+    style="background-color: rgb(0, 121, 107); color: rgb(255, 255, 255);">
+    <div class="grid items-center lg:gap-6 xl:gap-10 mx-auto pt-6 pb-6 px-6 lg:px-12"
+        style="grid-template-columns: 1fr auto 1fr;">
+        <div class="lg:w-auto whitespace-nowrap">
+            <ul class="lg:flex items-center gap-x-4 gap-y-2 flex-wrap hidden">
+                <li>
+                    <div class="flex justify-center items-center"><svg xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 24 24" width="24" height="24" class="icon w-8 h-8"
+                            aria-hidden="true" style="color: rgb(255, 255, 255);">
+                            <path fill-rule="evenodd"
+                                d="M10.4375 21.8784C5.65941 21.1274 2 16.9877 2 12 2 6.48086 6.48086 2 12 2c5.5191 0 10 4.48086 10 10 0 4.9877-3.6594 9.1274-8.4375 9.8784v-6.9878h2.3301L16.3359 12h-2.7734v-1.8758c0-.79084.3874-1.5617 1.6296-1.5617h1.261V6.10156s-1.1443-.19531-2.2385-.19531c-2.2842 0-3.7771 1.38438-3.7771 3.89063V12H7.89844v2.8906h2.53906v6.9878Z"
+                                clip-rule="evenodd"></path>
+                        </svg></div>
+                </li>
+                <li>
+                    <div class="flex justify-center items-center"><svg xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 24 24" width="24" height="24" class="icon w-8 h-8"
+                            aria-hidden="true" style="color: rgb(255, 255, 255);">
+                            <path fill-rule="evenodd"
+                                d="M12 2c5.5191 0 10 4.48086 10 10 0 5.5191-4.4809 10-10 10-5.51914 0-10-4.4809-10-10C2 6.48086 6.48086 2 12 2Zm0 3.75c-1.6974 0-1.9102.00719-2.57688.03762-.66523.03035-1.11957.13601-1.51714.29051-.41098.15972-.75953.37343-1.107.72089-.34746.34746-.56117.69602-.72089 1.107-.1545.39753-.26012.85187-.29051 1.5171C5.75719 10.0898 5.75 10.3026 5.75 12s.00719 1.9102.03758 2.5769c.03039.6652.13601 1.1195.29051 1.5171.15972.411.37343.7595.72089 1.107.34747.3475.69602.5612 1.107.7209.39757.1545.85191.2601 1.51714.2905.66668.0304.87948.0376 2.57688.0376s1.9102-.0072 2.5769-.0376c.6652-.0304 1.1195-.136 1.5171-.2905.411-.1597.7595-.3734 1.107-.7209.3475-.3475.5612-.696.7209-1.107.1545-.3976.2601-.8519.2905-1.5171.0304-.6667.0376-.8795.0376-2.5769 0-1.6974-.0072-1.9102-.0376-2.57688-.0304-.66523-.136-1.11957-.2905-1.5171-.1597-.41098-.3734-.75954-.7209-1.107s-.696-.56117-1.107-.72089c-.3976-.1545-.8519-.26016-1.5171-.29051C13.9102 5.75719 13.6974 5.75 12 5.75Zm0 1.12613c1.6688 0 1.8665.00637 2.5255.03645.6094.02781.9403.12961 1.1606.21519.2917.11336.4999.24883.7186.46754.2187.21867.3542.42692.4675.71864.0856.22023.1874.55113.2152 1.1605.0301.65905.0365.85675.0365 2.52555s-.0064 1.8665-.0365 2.5255c-.0278.6094-.1296.9403-.2152 1.1606-.1133.2917-.2488.4999-.4675.7186-.2187.2187-.4269.3542-.7186.4675-.2203.0856-.5512.1874-1.1606.2152-.6589.0301-.8566.0365-2.5255.0365s-1.8666-.0064-2.52555-.0365c-.60937-.0278-.94027-.1296-1.1605-.2152-.29176-.1133-.49997-.2488-.71868-.4675-.21871-.2187-.35414-.4269-.4675-.7186-.08558-.2203-.18742-.5512-.21523-1.1606-.03008-.659-.03641-.8567-.03641-2.5255s.00633-1.8665.03641-2.52555c.02781-.60937.12965-.94027.21523-1.1605.11336-.29172.24879-.49997.4675-.71864.21871-.21871.42692-.35418.71868-.46754.22023-.08558.55113-.18738 1.1605-.21519.65905-.03008.85675-.03645 2.52555-.03645Zm0 1.91442c-1.7725 0-3.20945 1.43695-3.20945 3.20945S10.2275 15.2095 12 15.2095s3.2095-1.437 3.2095-3.2095c0-1.7725-1.437-3.20945-3.2095-3.20945Zm0 5.29275c-1.1506 0-2.08332-.9327-2.08332-2.0833 0-1.1506.93272-2.08332 2.08332-2.08332S14.0833 10.8494 14.0833 12 13.1506 14.0833 12 14.0833Zm4.0863-5.41955c0 .41422-.3358.74996-.7501.74996-.4141 0-.7499-.33574-.7499-.74996s.3358-.75.7499-.75c.4143 0 .7501.33578.7501.75Z"
+                                clip-rule="evenodd"></path>
+                        </svg></div>
+                </li>
+                <li>
+                    <div class="flex justify-center items-center"><svg xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 24 24" width="24" height="24" class="icon w-8 h-8"
+                            aria-hidden="true" style="color: rgb(255, 255, 255);">
+                            <path
+                                d="M22 5.92396c-.7352.32682-1.5265.54727-2.3567.64592.8477-.50748 1.4976-1.31133 1.8042-2.27026-.7929.47053-1.6707.81196-2.6057.99628C18.0936 4.49855 17.0271 4 15.8469 4c-2.2658 0-4.1029 1.83708-4.1029 4.10328 0 .32114.0362.63415.1064.93498-3.41027-.17132-6.43404-1.8046-8.45787-4.28719-.35321.60573-.55539 1.31052-.55539 2.06321 0 1.42338.72428 2.6795 1.8253 3.41512-.67231-.0215-1.30523-.2062-1.85859-.51355-.00041.01705-.00041.03451-.00041.05197 0 1.98768 1.41445 3.64578 3.29172 4.02328-.34427.0934-.70682.1437-1.08113.1437-.2647 0-.52169-.0255-.77219-.0738.52251 1.63 2.03764 2.8167 3.8329 2.8496-1.4043 1.1006-3.17317 1.7566-5.09591 1.7566-.33088 0-.6577-.0194-.97883-.0576 1.81637 1.1648 3.97296 1.8436 6.28991 1.8436 7.54769 0 11.67449-6.2522 11.67449-11.67451 0-.17782-.0037-.35524-.0114-.53143.8014-.57731 1.4973-1.30037 2.047-2.1233Z">
+                            </path>
+                        </svg></div>
+                </li>
+            </ul>
+        </div>
+        <div class="flex-1 flex flex-col items-center gap-4 whitespace-nowrap overflow-hidden">
+            <div class="flex flex-col items-center gap-4 justify-center w-full truncate"><a
+                    class="max-w-full overflow-hidden">
+                    <h1 class="heading-small lg:heading-medium overflow-hidden overflow-ellipsis max-w-full"
+                        style="color: rgb(255, 255, 255); font-family: var(--head-fontFamily); font-weight: var(--head-fontWeight);">
+                        PauloWebsite</h1>
+                </a></div>
+        </div>
+        <div class="flex justify-end whitespace-nowrap">
+            <div class="ml-auto lg:hidden"><svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24" width="24" height="24" class="icon w-5 h-5 ml-auto mr-0" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg></div>
+        </div>
+    </div>
+</header>
+<div class="relative">
+    <div
+        class="flex flex-col items-center justify-center gap-4 absolute z-90 bg-black bg-opacity-50 w-full h-full border-2 border-indigo-500 opacity-0 transition-all hover:opacity-100">
+        <button class="light gap-3 lg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                aria-hidden="true" class="icon w-4 h-4 text-indigo-700">
+                <path
+                    d="M11.983 1.907a.75.75 0 00-1.292-.657l-8.5 9.5A.75.75 0 002.75 12h6.572l-1.305 6.093a.75.75 0 001.292.657l8.5-9.5A.75.75 0 0017.25 8h-6.572l1.305-6.093z">
+                </path>
+            </svg><span class="!font-sans text-sm font-semibold text-indigo-700">Regenerate section</span></button>
+    </div>
+    <section data-text-color="#000000" class="relative z-10 flex justify-center overflow-hidden flex-none items-center"
+        style="background-image: url(&quot;https://images.unsplash.com/photo-1605379399843-5870eea9b74e?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3wyNjI5NjF8MHwxfHNlYXJjaHwxNnx8U29mdHdhcmUlMjBEZXZlbG9wbWVudHxlbnwwfHx8fDE2ODk1ODM5MzF8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080&quot;); background-position: center center; background-size: cover; min-height: 240px;">
+        <div class="w-full h-full absolute top-0 left-0" style="background-color: rgba(255, 193, 7, 0.5);"></div>
+        <div class="relative container mx-auto px-6 z-10 pt-12 lg:pt-32 xl:pt-40 pb-12 lg:pb-32 xl:pb-40">
+            <div class="max-w-3xl text-center mx-auto">
+                <h2 class="heading-xlarge mb-6 break-word text-center"
+                    style="color: rgb(0, 0, 0); font-family: var(--head-fontFamily); font-weight: var(--head-fontWeight);">
+                    Desenvolva software incrível agora!</h2>
+                <p class="body-large"
+                    style="color: rgb(0, 0, 0); scroll-behavior: smooth; font-family: var(--body-fontFamily); font-weight: var(--body-fontWeight);">
+                    Transformamos ideias em softwares de alta qualidade. Conheça nossos serviços!</p><a
+                    class="button xl primary mt-6 lg:mt-8 w-full md:w-max" target="_self" href="/website-builder#"
+                    style="scroll-behavior: smooth; font-family: var(--body-fontFamily); font-weight: var(--body-fontWeight); background-color: rgb(255, 193, 7); color: rgb(0, 0, 0); border-radius: 8px; border-color: rgb(255, 193, 7); border-width: 2px; border-style: solid; box-shadow: none;">Saiba
+                    mais</a>
+            </div>
+        </div>
+    </section>
+</div>
+<div class="relative">   
+    <section class="flex flex-none items-center" style="background-color: rgb(51, 51, 51); min-height: 240px;">
+        <div class="container mx-auto relative z-10 pt-12 lg:pt-14 xl:pt-20 pb-12 lg:pb-14 xl:pb-20">
+            <div class="flex flex-col lg:flex-row w-full gap-10 lg:gap-20 items-center lg:!flex-row-reverse">
+                <div class="flex-1 flex flex-col items-center lg:items-start">
+                    <div class="rich-text-block website-wysiwyg" style="color: rgb(255, 255, 255);">
+                        <h3 style="white-space: pre-line">Sobre nós</h3>
+                        <p style="white-space: pre-line">A PauloWebsite é uma empresa de desenvolvimento de software
+                            localizada em Seixal, 15. Com uma equipe altamente qualificada e experiente, estamos
+                            comprometidos em fornecer soluções inovadoras e personalizadas para atender às necessidades
+                            específicas de nossos clientes. Nosso objetivo é ajudar as empresas a alcançarem seu
+                            potencial máximo, fornecendo serviços de desenvolvimento de software de alta qualidade e
+                            suporte técnico excepcional. Trabalhamos em estreita colaboração com nossos clientes para
+                            entender suas metas e objetivos, garantindo que nossas soluções atendam às suas expectativas
+                            e impulsionem seu sucesso no mercado competitivo de hoje.</p>
+                    </div>
+                </div>
+                <div class="flex-1 flex w-full h-full justify-center lg:justify-start lg:!justify-end">
+                    <div class="flex-shrink-0 relative mx-auto w-full aspect-w-16 aspect-h-9"><span
+                            style="box-sizing: border-box; display: block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;"><img
+                                alt="We provide high quality services"
+                                src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3wyNjI5NjF8MHwxfHNlYXJjaHwxN3x8U29mdHdhcmUlMjBEZXZlbG9wbWVudHxlbnwwfHx8fDE2ODk1ODM5MzF8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                                decoding="async" data-nimg="fill" class="rounded-2xl md:rounded-3xl lg:rounded-4xl"
+                                style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover; object-position: center center;"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<div class="relative">
+    <div
+        class="flex flex-col items-center justify-center gap-4 absolute z-90 bg-black bg-opacity-50 w-full h-full border-2 border-indigo-500 opacity-0 transition-all hover:opacity-100">
+        <button class="light gap-3 lg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                aria-hidden="true" class="icon w-4 h-4 text-indigo-700">
+                <path
+                    d="M11.983 1.907a.75.75 0 00-1.292-.657l-8.5 9.5A.75.75 0 002.75 12h6.572l-1.305 6.093a.75.75 0 001.292.657l8.5-9.5A.75.75 0 0017.25 8h-6.572l1.305-6.093z">
+                </path>
+            </svg><span class="!font-sans text-sm font-semibold text-indigo-700">Regenerate section</span></button>
+    </div>
+    <section class="flex flex-none items-center" style="background-color: rgb(20, 141, 127); min-height: 240px;">
+        <div class="container mx-auto relative z-10 pt-12 lg:pt-14 xl:pt-20 pb-12 lg:pb-14 xl:pb-20">
+            <h2 class="heading-large mb-6 text-left"
+                style="color: rgb(255, 255, 255); font-family: var(--head-fontFamily); font-weight: var(--head-fontWeight);">
+                Os Nossos Serviços</h2>
+            <div class="flex flex-col sm:flex-row flex-wrap gap-10 justify-start"><span
+                    class="hidden align-start align-center align-end"></span>
+                <div class="block-list-item w-full flex flex-col align-start">
+                    <div class="flex-shrink-0 relative mb-6 w-full mx-auto aspect-w-1 aspect-h-1"><span
+                            style="box-sizing: border-box; display: block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;"><img
+                                alt="Desenvolvimento de Software Personalizado"
+                                src="https://images.unsplash.com/photo-1537432376769-00f5c2f4c8d2?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3wyNjI5NjF8MHwxfHNlYXJjaHwxNHx8U29mdHdhcmUlMjBEZXZlbG9wbWVudHxlbnwwfHx8fDE2ODk1ODM5MzF8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                                decoding="async" data-nimg="fill" class="rounded-2xl md:rounded-3xl lg:rounded-4xl"
+                                style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover; object-position: center center;"></span>
+                    </div>
+                    <div class="text-left">
+                        <p class="heading-medium mb-4"
+                            style="color: rgb(255, 255, 255); font-family: var(--head-fontFamily); font-weight: var(--head-fontWeight);">
+                            Desenvolvimento de Software Personalizado</p>
+                        <div class="rich-text-block website-wysiwyg" style="color: rgb(255, 255, 255);">Desenvolvemos
+                            software personalizado à medida das necessidades da sua empresa. Desde ideia ao produto
+                            final, trabalhamos em conjunto consigo para garantir o sucesso do resultado final.</div><a
+                            class="button lg primary mt-4" target="_self" href="/website-builder#"
+                            style="background-color: rgb(255, 193, 7); color: rgb(0, 0, 0); border-radius: 8px; border-color: rgb(255, 193, 7); border-width: 2px; border-style: solid; box-shadow: none;">Mais
+                            informações</a>
+                    </div>
+                </div>
+                <div class="block-list-item w-full flex flex-col align-start">
+                    <div class="flex-shrink-0 relative mb-6 w-full mx-auto aspect-w-1 aspect-h-1"><span
+                            style="box-sizing: border-box; display: block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;"><img
+                                alt="Manutenção e Suporte de Software"
+                                src="https://images.unsplash.com/photo-1552664730-d307ca884978?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3wyNjI5NjF8MHwxfHNlYXJjaHwyNXx8U29mdHdhcmUlMjBEZXZlbG9wbWVudHxlbnwwfHx8fDE2ODk1ODM5MzF8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                                decoding="async" data-nimg="fill" class="rounded-2xl md:rounded-3xl lg:rounded-4xl"
+                                style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover; object-position: center center;"></span>
+                    </div>
+                    <div class="text-left">
+                        <p class="heading-medium mb-4"
+                            style="color: rgb(255, 255, 255); font-family: var(--head-fontFamily); font-weight: var(--head-fontWeight);">
+                            Manutenção e Suporte de Software</p>
+                        <div class="rich-text-block website-wysiwyg" style="color: rgb(255, 255, 255);">Oferecemos
+                            serviços de manutenção e suporte de software, garantindo que o seu software continua a
+                            operar eficientemente após o seu lançamento. Estamos sempre disponíveis para esclarecer
+                            qualquer dúvida e para fornecer atualizações.</div><a class="button lg primary mt-4"
+                            target="_self" href="/website-builder#"
+                            style="background-color: rgb(255, 193, 7); color: rgb(0, 0, 0); border-radius: 8px; border-color: rgb(255, 193, 7); border-width: 2px; border-style: solid; box-shadow: none;">Mais
+                            informações</a>
+                    </div>
+                </div>
+                <div class="block-list-item w-full flex flex-col align-start">
+                    <div class="flex-shrink-0 relative mb-6 w-full mx-auto aspect-w-1 aspect-h-1"><span
+                            style="box-sizing: border-box; display: block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;"><img
+                                alt="Integração de Sistemas"
+                                src="https://images.unsplash.com/photo-1631624215749-b10b3dd7bca7?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3wyNjI5NjF8MHwxfHNlYXJjaHw3fHxTb2Z0d2FyZSUyMERldmVsb3BtZW50fGVufDB8fHx8MTY4OTU4MzkzMXww&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                                decoding="async" data-nimg="fill" class="rounded-2xl md:rounded-3xl lg:rounded-4xl"
+                                style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover; object-position: center center;"></span>
+                    </div>
+                    <div class="text-left">
+                        <p class="heading-medium mb-4"
+                            style="color: rgb(255, 255, 255); font-family: var(--head-fontFamily); font-weight: var(--head-fontWeight);">
+                            Integração de Sistemas</p>
+                        <div class="rich-text-block website-wysiwyg" style="color: rgb(255, 255, 255);">Integramos
+                            facilmente os seus sistemas, automatizando processos e reduzindo a necessidade de
+                            intervenção manual. A integração é feita de forma personalizada, garantindo que os seus
+                            sistemas atendem às suas necessidades de negócios.</div><a class="button lg primary mt-4"
+                            target="_self" href="/website-builder#"
+                            style="background-color: rgb(255, 193, 7); color: rgb(0, 0, 0); border-radius: 8px; border-color: rgb(255, 193, 7); border-width: 2px; border-style: solid; box-shadow: none;">Mais
+                            informações</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<div class="relative">  
+    <section class="flex flex-none items-center" style="background-color: rgb(255, 193, 7); min-height: 240px;">
+        <div
+            class="container mx-auto testimonials-carousel relative z-10 pt-12 lg:pt-14 xl:pt-20 pb-12 lg:pb-14 xl:pb-20">
+            <div class="flex h-full my-auto">
+                <div class="max-w-5xl flex flex-col gap-4 justify-center text-left ml-0 mr-auto items-start">
+                    <h3 class="heading-medium"
+                        style="color: rgb(0, 0, 0); font-family: var(--head-fontFamily); font-weight: var(--head-fontWeight);">
+                        O PauloWebsite é incrível! A sua experiência em desenvolvimento de software é notável. Ele
+                        entregou o projeto dentro do prazo, com qualidade excepcional. Estou muito agradecida por seu
+                        profissionalismo e recomendo seus serviços a todos em Seixal!</h3>
+                    <p class="body-large" style="color: rgb(0, 0, 0);">- Ana</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<div class="relative">   
+    <section class="flex flex-none items-center" style="background-color: rgb(51, 51, 51); min-height: 240px;">
+        <div class="relative z-10 container mx-auto pt-12 lg:pt-14 xl:pt-20 pb-12 lg:pb-14 xl:pb-20">
+            <div class="container mx-auto">
+                <h2 class="heading-large mb-6 text-undefined"
+                    style="color: rgb(255, 255, 255); font-family: var(--head-fontFamily); font-weight: var(--head-fontWeight);">
+                    Nossos Clientes</h2>
+            </div>
+            <div class="gallery-carousel container mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-10">
+                    <div class="relative overflow-hidden aspect-w-1 aspect-h-1"><span
+                            style="box-sizing: border-box; display: block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;"><img
+                                src="https://images.unsplash.com/photo-1608306448197-e83633f1261c?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3wyNjI5NjF8MHwxfHNlYXJjaHwxOHx8U29mdHdhcmUlMjBEZXZlbG9wbWVudHxlbnwwfHx8fDE2ODk1ODM5MzF8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                                decoding="async" data-nimg="fill"
+                                class="w-full h-full object-center object-cover rounded-2xl md:rounded-3xl lg:rounded-4xl"
+                                style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"></span>
+                    </div>
+                    <div class="relative overflow-hidden aspect-w-1 aspect-h-1"><span
+                            style="box-sizing: border-box; display: block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;"><img
+                                src="https://images.unsplash.com/photo-1629904853716-f0bc54eea481?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3wyNjI5NjF8MHwxfHNlYXJjaHwxMHx8U29mdHdhcmUlMjBEZXZlbG9wbWVudHxlbnwwfHx8fDE2ODk1ODM5MzF8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                                decoding="async" data-nimg="fill"
+                                class="w-full h-full object-center object-cover rounded-2xl md:rounded-3xl lg:rounded-4xl"
+                                style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"></span>
+                    </div>
+                    <div class="relative overflow-hidden aspect-w-1 aspect-h-1"><span
+                            style="box-sizing: border-box; display: block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;"><img
+                                src="https://images.unsplash.com/photo-1553877522-43269d4ea984?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3wyNjI5NjF8MHwxfHNlYXJjaHwyMXx8U29mdHdhcmUlMjBEZXZlbG9wbWVudHxlbnwwfHx8fDE2ODk1ODM5MzF8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                                decoding="async" data-nimg="fill"
+                                class="w-full h-full object-center object-cover rounded-2xl md:rounded-3xl lg:rounded-4xl"
+                                style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"></span>
+                    </div>
+                    <div class="relative overflow-hidden aspect-w-1 aspect-h-1"><span
+                            style="box-sizing: border-box; display: block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;"><img
+                                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3wyNjI5NjF8MHwxfHNlYXJjaHwzfHxTb2Z0d2FyZSUyMERldmVsb3BtZW50fGVufDB8fHx8MTY4OTU4MzkzMXww&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                                decoding="async" data-nimg="fill"
+                                class="w-full h-full object-center object-cover rounded-2xl md:rounded-3xl lg:rounded-4xl"
+                                style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"></span>
+                    </div>
+                    <div class="relative overflow-hidden aspect-w-1 aspect-h-1"><span
+                            style="box-sizing: border-box; display: block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;"><img
+                                src="https://images.unsplash.com/photo-1579403124614-197f69d8187b?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3wyNjI5NjF8MHwxfHNlYXJjaHwxNXx8U29mdHdhcmUlMjBEZXZlbG9wbWVudHxlbnwwfHx8fDE2ODk1ODM5MzF8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                                decoding="async" data-nimg="fill"
+                                class="w-full h-full object-center object-cover rounded-2xl md:rounded-3xl lg:rounded-4xl"
+                                style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"></span>
+                    </div>
+                    <div class="relative overflow-hidden aspect-w-1 aspect-h-1"><span
+                            style="box-sizing: border-box; display: block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;"><img
+                                src="https://images.unsplash.com/photo-1557804506-669a67965ba0?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3wyNjI5NjF8MHwxfHNlYXJjaHwyMHx8U29mdHdhcmUlMjBEZXZlbG9wbWVudHxlbnwwfHx8fDE2ODk1ODM5MzF8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                                decoding="async" data-nimg="fill"
+                                class="w-full h-full object-center object-cover rounded-2xl md:rounded-3xl lg:rounded-4xl"
+                                style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<div class="relative">   
+    <section class="flex flex-none items-center" style="background-color: rgb(20, 141, 127); min-height: 240px;">
+        <div class="container mx-auto relative z-10 pt-12 lg:pt-14 xl:pt-20 pb-12 lg:pb-14 xl:pb-20">
+            <div class="flex flex-col w-full gap-10 lg:gap-20 lg:flex-row">
+                <div class="w-full md:w-1/2 lg:mt-10">
+                    <div class="rich-text-block website-wysiwyg" style="color: rgb(255, 255, 255);">
+                        <h3>Fale Conosco</h3>
+                        <p>Entre em contato conosco utilizando o formulário abaixo. Estamos ansiosos para ouvir de você
+                            e ajudá-lo com suas necessidades de construção.</p>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <div class="flex flex-col lg:flex-row lg:space-x-4">
+                        <div class="flex-1 mb-4"><label class="mb-1 body-small"
+                                style="color: rgb(255, 255, 255);">Nome</label><input
+                                class="input border-none !shadow-none !placeholder-current" type="text"
+                                style="border-radius: 8px; background-color: rgba(255, 255, 255, 0.07); color: rgb(255, 255, 255);">
+                        </div>
+                        <div class="flex-1 mb-4"><label class="mb-1 body-small"
+                                style="color: rgb(255, 255, 255);">E-mail</label><input
+                                class="input border-none !shadow-none !placeholder-current" type="text"
+                                style="border-radius: 8px; background-color: rgba(255, 255, 255, 0.07); color: rgb(255, 255, 255);">
+                        </div>
+                    </div>
+                    <div class="mb-4"><label class="mb-1 body-small"
+                            style="color: rgb(255, 255, 255);">Mensagem</label><textarea
+                            class="input border-none !shadow-none !placeholder-current" rows="5"
+                            style="border-radius: 8px; background-color: rgba(255, 255, 255, 0.07); color: rgb(255, 255, 255);"></textarea>
+                    </div>
+                    <div class="text-right"><button class="primary lg w-36"
+                            style="background-color: rgb(255, 193, 7); color: rgb(0, 0, 0); border-radius: 8px; border-color: rgb(255, 193, 7); border-width: 2px; border-style: solid; box-shadow: none;">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<footer class="flex-1 h-full" style="background-color: rgb(0, 121, 107); color: rgb(255, 255, 255);">
+    <div class="container mx-auto relative z-10 pt-12 lg:pt-14 xl:pt-20 pb-12 lg:pb-14 xl:pb-20">
+        <div class="flex flex-col justify-center gap-12 text-center">
+            <div class="flex flex-col justify-center lg:items-center gap-6 lg:gap-6">
+                <h3 class="heading-medium"
+                    style="color: rgb(255, 255, 255); font-family: var(--head-fontFamily); font-weight: var(--head-fontWeight);">
+                    PauloWebsite</h3>
+            </div>
+            <div class="flex flex-col lg:flex-row lg:items-center justify-center gap-12 lg:gap-14">
+                <ul class="flex items-center gap-x-4 gap-y-2 flex-wrap justify-center">
+                    <li>
+                        <div class="flex justify-center items-center"><svg xmlns="http://www.w3.org/2000/svg"
+                                fill="currentColor" viewBox="0 0 24 24" width="24" height="24" class="icon w-8 h-8"
+                                aria-hidden="true" style="color: rgb(255, 255, 255);">
+                                <path fill-rule="evenodd"
+                                    d="M10.4375 21.8784C5.65941 21.1274 2 16.9877 2 12 2 6.48086 6.48086 2 12 2c5.5191 0 10 4.48086 10 10 0 4.9877-3.6594 9.1274-8.4375 9.8784v-6.9878h2.3301L16.3359 12h-2.7734v-1.8758c0-.79084.3874-1.5617 1.6296-1.5617h1.261V6.10156s-1.1443-.19531-2.2385-.19531c-2.2842 0-3.7771 1.38438-3.7771 3.89063V12H7.89844v2.8906h2.53906v6.9878Z"
+                                    clip-rule="evenodd"></path>
+                            </svg></div>
+                    </li>
+                    <li>
+                        <div class="flex justify-center items-center"><svg xmlns="http://www.w3.org/2000/svg"
+                                fill="currentColor" viewBox="0 0 24 24" width="24" height="24" class="icon w-8 h-8"
+                                aria-hidden="true" style="color: rgb(255, 255, 255);">
+                                <path fill-rule="evenodd"
+                                    d="M12 2c5.5191 0 10 4.48086 10 10 0 5.5191-4.4809 10-10 10-5.51914 0-10-4.4809-10-10C2 6.48086 6.48086 2 12 2Zm0 3.75c-1.6974 0-1.9102.00719-2.57688.03762-.66523.03035-1.11957.13601-1.51714.29051-.41098.15972-.75953.37343-1.107.72089-.34746.34746-.56117.69602-.72089 1.107-.1545.39753-.26012.85187-.29051 1.5171C5.75719 10.0898 5.75 10.3026 5.75 12s.00719 1.9102.03758 2.5769c.03039.6652.13601 1.1195.29051 1.5171.15972.411.37343.7595.72089 1.107.34747.3475.69602.5612 1.107.7209.39757.1545.85191.2601 1.51714.2905.66668.0304.87948.0376 2.57688.0376s1.9102-.0072 2.5769-.0376c.6652-.0304 1.1195-.136 1.5171-.2905.411-.1597.7595-.3734 1.107-.7209.3475-.3475.5612-.696.7209-1.107.1545-.3976.2601-.8519.2905-1.5171.0304-.6667.0376-.8795.0376-2.5769 0-1.6974-.0072-1.9102-.0376-2.57688-.0304-.66523-.136-1.11957-.2905-1.5171-.1597-.41098-.3734-.75954-.7209-1.107s-.696-.56117-1.107-.72089c-.3976-.1545-.8519-.26016-1.5171-.29051C13.9102 5.75719 13.6974 5.75 12 5.75Zm0 1.12613c1.6688 0 1.8665.00637 2.5255.03645.6094.02781.9403.12961 1.1606.21519.2917.11336.4999.24883.7186.46754.2187.21867.3542.42692.4675.71864.0856.22023.1874.55113.2152 1.1605.0301.65905.0365.85675.0365 2.52555s-.0064 1.8665-.0365 2.5255c-.0278.6094-.1296.9403-.2152 1.1606-.1133.2917-.2488.4999-.4675.7186-.2187.2187-.4269.3542-.7186.4675-.2203.0856-.5512.1874-1.1606.2152-.6589.0301-.8566.0365-2.5255.0365s-1.8666-.0064-2.52555-.0365c-.60937-.0278-.94027-.1296-1.1605-.2152-.29176-.1133-.49997-.2488-.71868-.4675-.21871-.2187-.35414-.4269-.4675-.7186-.08558-.2203-.18742-.5512-.21523-1.1606-.03008-.659-.03641-.8567-.03641-2.5255s.00633-1.8665.03641-2.52555c.02781-.60937.12965-.94027.21523-1.1605.11336-.29172.24879-.49997.4675-.71864.21871-.21871.42692-.35418.71868-.46754.22023-.08558.55113-.18738 1.1605-.21519.65905-.03008.85675-.03645 2.52555-.03645Zm0 1.91442c-1.7725 0-3.20945 1.43695-3.20945 3.20945S10.2275 15.2095 12 15.2095s3.2095-1.437 3.2095-3.2095c0-1.7725-1.437-3.20945-3.2095-3.20945Zm0 5.29275c-1.1506 0-2.08332-.9327-2.08332-2.0833 0-1.1506.93272-2.08332 2.08332-2.08332S14.0833 10.8494 14.0833 12 13.1506 14.0833 12 14.0833Zm4.0863-5.41955c0 .41422-.3358.74996-.7501.74996-.4141 0-.7499-.33574-.7499-.74996s.3358-.75.7499-.75c.4143 0 .7501.33578.7501.75Z"
+                                    clip-rule="evenodd"></path>
+                            </svg></div>
+                    </li>
+                    <li>
+                        <div class="flex justify-center items-center"><svg xmlns="http://www.w3.org/2000/svg"
+                                fill="currentColor" viewBox="0 0 24 24" width="24" height="24" class="icon w-8 h-8"
+                                aria-hidden="true" style="color: rgb(255, 255, 255);">
+                                <path
+                                    d="M22 5.92396c-.7352.32682-1.5265.54727-2.3567.64592.8477-.50748 1.4976-1.31133 1.8042-2.27026-.7929.47053-1.6707.81196-2.6057.99628C18.0936 4.49855 17.0271 4 15.8469 4c-2.2658 0-4.1029 1.83708-4.1029 4.10328 0 .32114.0362.63415.1064.93498-3.41027-.17132-6.43404-1.8046-8.45787-4.28719-.35321.60573-.55539 1.31052-.55539 2.06321 0 1.42338.72428 2.6795 1.8253 3.41512-.67231-.0215-1.30523-.2062-1.85859-.51355-.00041.01705-.00041.03451-.00041.05197 0 1.98768 1.41445 3.64578 3.29172 4.02328-.34427.0934-.70682.1437-1.08113.1437-.2647 0-.52169-.0255-.77219-.0738.52251 1.63 2.03764 2.8167 3.8329 2.8496-1.4043 1.1006-3.17317 1.7566-5.09591 1.7566-.33088 0-.6577-.0194-.97883-.0576 1.81637 1.1648 3.97296 1.8436 6.28991 1.8436 7.54769 0 11.67449-6.2522 11.67449-11.67451 0-.17782-.0037-.35524-.0114-.53143.8014-.57731 1.4973-1.30037 2.047-2.1233Z">
+                                </path>
+                            </svg></div>
+                    </li>
+                </ul>
+                <p class="body-normal lg:text-right whitespace-nowrap !text-center"><span>Made with&nbsp;</span><a
+                        target="_blank" class="underline" href="https://durable.co"
+                        style="color: rgb(255, 255, 255);">Durable</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+   
+</body>
+</html>
